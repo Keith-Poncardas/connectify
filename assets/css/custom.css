@@ -1,0 +1,395 @@
+/* Customizable CSS (Keith Poncardas) */
+
+/* ===== Global Selector =====*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+  padding-top: 90px;
+}
+
+/* ===== Navigation Bar =====*/
+
+/* Navigation Links */
+.nav-item .nav-link {
+  font-size: 1.3em;
+}
+
+/* Navbar Toggler */
+.navbar .navbar-toggler {
+  border: none; /* Remove the border */
+  outline: none; /* Remove the outline when focused */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+/* Profile Status */
+.profile {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #0D6EFD;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-image {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #212529;
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #3cba54;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.status.online {
+  background-color: #3cba54;
+}
+
+.status.offline {
+  background-color: #ccc;
+}
+
+/* Red Notification Count */
+.nav-link .notif-count {
+  font-size: 9px;
+  top: 11px;
+  right: -19px;
+  border: 2px solid #212529;
+}
+
+/* Icon Label (Disabled On Large Desktop Screen) */
+.nav-link .icon-label {
+  display: none;
+}
+
+/* Main Content Container */
+.col-lg-6 .card-box {
+  border: none;
+}
+
+.col-lg-3 .left-sidebar-box {
+  border: none;
+}
+
+.col-lg-3 .right-sidebar-box {
+  border: none;
+}
+
+.col .img-thumbnail {
+  width: 55px;
+  border: none;
+  border-radius: 50%;
+}
+
+.list-group .list-group-item {
+  border: none;
+}
+
+.post-box-image-container .img-fluid {
+  border: 2px solid #fff;
+}
+
+.post-box-image-container {
+  width: fit-content;
+  border: 2px solid #0D6EFD;
+  border-radius: 50%;
+}
+
+.upload-option .col {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col .uploader-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.col .time-privacy {
+  font-size: 11px;
+}
+
+.col .user-name {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Verified Mark */
+.col .verified-mark {
+  color: #0D6EFD;
+  font-size: 12px;
+}
+
+.col .dotted-menu {
+  font-size: 23px;
+}
+
+.write-post {
+  font-size: 15px;
+}
+
+.reactions-container .reaction-1, .reaction-2, .reaction-3 {
+  width: 18px;
+}
+
+.comment-share-container {
+  font-size: 14px;
+}
+
+.comment-share-container .list-inline-item .sm-icon {
+  display: none;
+}
+
+.list-inline .all-counts {
+  font-size: 13px;
+}
+
+.list-inline .sm-label {
+  font-size: 13px;
+}
+
+
+
+/* Post Interaction Icons & Text */
+.col .like-icon, .comment-icon, .share-icon {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.row .col .post-box-icons-labels {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.col .share-icon {
+  font-size: 20px;
+}
+
+/* === Uploud Options Icon Sizes & Colors (Desktop) === */
+.upload-option .col .video-icon, .image-icon, .videos-icon {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.col .post-box-icons-labels {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+
+.upload-option .col .video-icon {
+  color: #F02849;
+}
+
+.upload-option .col  .image-icon {
+  color: #45BD62;
+}
+
+.upload-option .col  .videos-icon {
+  color: #FC5677;
+}
+
+/* Left Sidebar Icons (Colors) */
+
+.left-sidebar-icons i {
+  font-size: 25px;
+}
+
+.left-sidebar-icons .friend-icon {
+  color: #31ACFB;
+}
+
+.left-sidebar-icons .news-icon {
+  color: #67D9CA;
+}
+
+.left-sidebar-icons .group-icon {
+  color: #FC5677;
+}
+
+.left-sidebar-icons .favourite-icon {
+  color: #F6B931;
+}
+
+
+
+
+/* ==== Smaller Screen Control (Media Query) ==== */
+
+@media only screen and (max-width: 991px) {
+  /* Red Notification Count Alignment for 990px Screen */
+  .nav-link .notif-count {
+    font-size: 9px;
+    top: 11px;
+    right: 94%;
+  }
+  /* Icon Label On Mobile */
+  .nav-link .icon-label {
+    margin-left: 15px;
+    display: inline;
+    font-size: 16px;
+  }
+  /* Disable Profile Status When The Screen Is 990px */
+  .profile {
+    display: none;
+  }
+  /* Disable Both Sidebars When 990px */
+  .row .col-lg-3 {
+    display: none;
+  }
+
+  /* === Uploud Options Icon Sizes & Colors (Tablet & Mobile) === */
+  .upload-option .col .video-icon, .image-icon, .videos-icon {
+    font-size: 21px;
+    margin-right: 3px;
+  }
+
+  .col .post-box-icons-labels {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .upload-option .col .video-icon {
+    color: #F02849;
+  }
+
+  .upload-option .col  .image-icon {
+    color: #45BD62;
+  }
+
+  .upload-option .col  .videos-icon {
+    color: #FC5677;
+  }
+
+  /* Post Interaction Icons & Text (Mobile Size) */
+  .col .like-icon, .comment-icon, .share-icon {
+  font-size: 18px;
+  font-weight: 500;
+  }
+
+  .row .col .post-box-icons-labels {
+  font-size: 10px;
+  margin-left: 3px;
+  } 
+
+  .comment-share-container .list-inline-item .sm-label {
+    display: none;
+  }
+
+  .comment-share-container .list-inline-item .sm-icon {
+    display: inline-block;
+  }
+
+  .reactions-container .reaction-1, .reaction-2, .reaction-3 {
+    width: 16px;
+  }
+
+  .list-inline .all-counts {
+    font-size: 12.5px;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .col .user-name {
+    font-size: 10.5px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  /* Red Notification Count Alignment for 766px Screen */
+  .nav-link .notif-count {
+    font-size: 9px;
+    top: 11px;
+    right: 91%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  /* Red Notification Count Alignment for 414px Screen */
+  .nav-link .notif-count {
+    font-size: 9px;
+    top: 11px;
+    right: 89%;
+  }
+  /* Brand Margin Bottom */
+  .navbar-brand {
+    margin-bottom: 10px;
+  }
+  /* Resize The Post Box Image When In The Mobile Screens */
+  .post-box-image-container .img-fluid {
+    max-width: 40px;
+  }
+
+  .upload-option .col {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .card .write-post {
+    font-size: 13px;
+  }
+
+  .col .uploader-name {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .up-name-privacy {
+    margin-left: 10px;
+  }
+
+  .col .verified-mark {
+    color: #0D6EFD;
+    font-size: 10px;
+  }
+  
+  .col .dotted-menu {
+    font-size: 22px;
+  }
+  
+  .write-post {
+    font-size: 15px;
+  }
+
+}
+
+/* Galaxy Fold Screen Size */
+@media only screen and (max-width: 330px) {
+  /* Search Bar Size */
+  .d-flex {
+    width: 72%;
+    height: 2em;
+  }
+  /* Navbar Toggler Size */
+  .navbar-toggler .navbar-toggler-icon {
+    font-size: 15px;
+  }
+  /* Red Notification Count Alignment for 280px Screen */
+  .nav-link .notif-count {
+    font-size: 9px;
+    top: 11px;
+    right: 82%;
+  }
+  /* Not Available Yet On 280px Screen */
+  body {
+    display: none;
+  }
+}

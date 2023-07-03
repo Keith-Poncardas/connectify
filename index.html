@@ -1,0 +1,401 @@
+<!-- © 2023 Connectify By Keith Poncardas -->
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/custom.css">
+
+  <!-- CDN Bootstrap 5 (CSS) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <!-- Semantic UI's (CSS) -->
+  <link rel="stylesheet" href="/assets/css/list.min.css">
+
+  <!-- Google Fonts API -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Connectify</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <!-- Brand/Logo -->
+      <a class="navbar-brand fw-medium" href="#" title="Connectify Logo">Connectify <sup><span
+            class="badge rounded-pill text-bg-primary">PH</span></sup></a>
+
+      <!-- Search Bar -->
+      <form class="d-flex rounded">
+        <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search" readonly>
+        <button class="btn btn-outline-success rounded-5" type="button"><i class='bx bx-search'></i></button>
+      </form>
+
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ms-3">
+            <a class="nav-link" href="#" title="Menu"><i class='bx bx-grid-alt'></i> <span
+                class="icon-label">Menu</span></a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link position-relative" href="#"><i class='bx bxl-messenger' title="Messages"></i>
+              <span class="position-absolute top-1 start-99 translate-middle badge rounded-pill bg-danger notif-count">
+                12
+                <span class="visually-hidden">unread messages</span>
+              </span>
+              <span class="icon-label">Messages</span>
+            </a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link position-relative" href="#"><i class='bx bxs-bell' title="Notification"></i> <span
+                class="position-absolute top-1 start-99 translate-middle badge rounded-pill bg-danger notif-count">
+                20
+                <span class="visually-hidden">unread messages</span>
+              </span>
+              <span class="icon-label">Notification</span>
+            </a>
+          </li>
+          <li class="nav-item ms-3">
+            <div class="profile" title="User">
+              <img src="/assets/img/profile.jpg" alt="Profile Image" class="profile-image">
+              <span class="status"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="container mt-4 main-content-container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card left-sidebar-box">
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-2">
+                    <div class="left-sidebar-image">
+                      <img src="/assets/img/profile.jpg" alt="Profile Pic" class="rounded-circle post-box-img"
+                        style="width: 30px;">
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-center justify-content-start">
+                    <span class="user-name">Keith Poncardas</span>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-2">
+                    <div class="left-sidebar-icons">
+                      <i class='bx bxs-user friend-icon'></i>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-center justify-content-start">
+                    <span class="user-name">Friends</span>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-2">
+                    <div class="left-sidebar-icons">
+                      <i class='bx bxs-news news-icon'></i>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-center justify-content-start">
+                    <span class="user-name">Feeds</span>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-2">
+                    <div class="left-sidebar-icons">
+                      <i class='bx bxs-group group-icon'></i>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-center justify-content-start">
+                    <span class="user-name">Groups</span>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-2">
+                    <div class="left-sidebar-icons">
+                      <i class='bx bxs-star favourite-icon'></i>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-center justify-content-start">
+                    <span class="user-name">Favourites</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 p-0">
+        <div class="card card-box">
+          <div class="card-body">
+            <!-- Create Post Box -->
+            <div class="card mb-3 p-2 post-card">
+              <div class="row d-flex align-items-center justify-content-center p-2">
+                <div class="col-2 post-box-img-container">
+                  <div class="post-box-image-container">
+                    <img src="/assets/img/profile.jpg" alt="Profile Pic" class="img-fluid rounded-circle post-box-img"
+                      style="width: 50px;">
+                  </div>
+                </div>
+                <div class="col-10">
+                  <div class="input-group">
+                    <input type="text" class="form-control rounded-5" placeholder="What's on your mind?">
+                  </div>
+                </div>
+              </div>
+              <div class="container text-center mt-4">
+                <div class="row upload-option">
+                  <div class="col">
+                    <i class='bx bxs-video video-icon'></i>
+                    <span class="post-box-icons-labels">Live Video</span>
+                  </div>
+                  <div class="col">
+                    <i class='bx bx-images image-icon'></i>
+                    <span class="post-box-icons-labels">Photo/Video</span>
+                  </div>
+                  <div class="col">
+                    <i class='bx bxs-videos videos-icon'></i>
+                    <span class="post-box-icons-labels">Reel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Post 1 -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="container text-center">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-1 p-0">
+                      <div class="post-box-image-container">
+                        <img src="/assets/img/profile.jpg" alt="Profile Pic"
+                          class="img-fluid rounded-circle post-box-img" style="width: 35px;">
+                      </div>
+                    </div>
+                    <div class="col text-start up-name-privacy">
+                      <p class="text-start m-0 uploader-name">Keith Poncardas <i
+                          class='bx bxs-check-circle verified-mark' title="Verified User"></i></p>
+                      <ul class="list-inline m-0 time-privacy custom-bullet">
+                        <li class="list-inline-item">1hr ago</li>
+                        <li class="list-inline-item"><i class='bx bx-world'></i></li>
+                      </ul>
+                    </div>
+                    <div class="col text-end">
+                      <i class='bx bx-dots-horizontal-rounded dotted-menu'></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-sm-start ms-3 me-3 write-post">This was actually me! 😆</p>
+              <figure class="figure m-0 mt-0 mb-0">
+                <img
+                  src="https://scontent.fmnl31-1.fna.fbcdn.net/v/t39.30808-6/356079127_323537896861473_2376929538923885476_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=F1vgD93tlNsAX-3nGmx&_nc_oc=AQmbEjbyXm-V4ZR3KaigxmUghMJ_fy_r50cDBWvjP7Mngx32yphICIQX23aSjNGksDw&_nc_ht=scontent.fmnl31-1.fna&oh=00_AfB_eb1qoOP38o7qdTQDcBvCnL2CaAOynKpHUNURtkUfVg&oe=64A33D4F"
+                  class="figure-img img-fluid rounded-top-3 my-0 mb-1" alt="...">
+              </figure>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-6  text-start">
+                    <ul class="list-inline m-0">
+                      <li class="list-inline-item reactions-list position-relative">
+                        <span class="reactions-container"><img class="reaction-1 img-fluid position-relative"
+                            src="/assets/svg/laugh-reaction.svg" alt="Reactions"></span>
+                        <span class="reactions-container position-relative"><img class="reaction-2 img-fluid"
+                            src="/assets/svg/love-reaction.svg" alt="Reactions"></span>
+                        <span class="reactions-container"><img class="reaction-3 img-fluid position-relative"
+                            src="/assets/svg/like-reaction.svg" alt="Reactions"></span>
+                      </li>
+                      <li class="list-inline-item  likes-count"><span class="likes-count all-counts">105K</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col text-end  d-flex justify-content-end align-items-center">
+                    <ul class="list-inline m-0 comment-share-container">
+                      <li class="list-inline-item ">
+                        <span class="comments-count all-counts">120K</span>
+                        <span class="comment-label sm-label">comments</span>
+                        <span class="comment-icon-sm sm-icon"><i class='bx bx-comment'></i></span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="comments-count all-counts">225K</span>
+                        <span class="share-label sm-label">share</span>
+                        <span class="share-icon-sm sm-icon"><i class='bx bx-share bx-flip-horizontal'></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="container text-center">
+              </div>
+              <div class="container text-center mb-2 mt-1 border-top">
+                <div class="row upload-option pt-2">
+                  <div class="col">
+                    <i class='bx bx-like like-icon'></i>
+                    <span class="post-box-icons-labels">Like</span>
+                  </div>
+                  <div class="col">
+                    <i class='bx bx-comment comment-icon'></i>
+                    <span class="post-box-icons-labels">Comment</span>
+                  </div>
+                  <div class="col">
+                    <i class='bx bx-share bx-flip-horizontal share-icon'></i>
+                    <span class="post-box-icons-labels">Share</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Post 2 -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="container text-center">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-1 p-0">
+                      <div class="post-box-image-container">
+                        <img
+                          src="https://scontent.fmnl31-1.fna.fbcdn.net/v/t39.30808-6/351457426_238533145481876_442296261348569758_n.jpg?_nc_cat=1&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=F79gidABTVEAX97Ohss&_nc_ht=scontent.fmnl31-1.fna&oh=00_AfAt9PflWy1AYr4mKcLSE19XCGnbhafikIP48CwOz3rjTQ&oe=64A6A93B"
+                          alt="Profile Pic" class="img-fluid rounded-circle post-box-img" style="width: 35px;">
+                      </div>
+                    </div>
+                    <div class="col text-start up-name-privacy">
+                      <p class="text-start m-0 uploader-name">John Smith</p>
+                      <ul class="list-inline m-0 time-privacy custom-bullet">
+                        <li class="list-inline-item">2d ago</li>
+                        <li class="list-inline-item"><i class='bx bxs-group'></i></li>
+                      </ul>
+                    </div>
+                    <div class="col text-end">
+                      <i class='bx bx-dots-horizontal-rounded dotted-menu'></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-sm-start ms-3 me-3 write-post">Love this 🖤</p>
+              <figure class="figure m-0 mt-0 mb-0">
+                <img
+                  src="https://scontent.fmnl31-1.fna.fbcdn.net/v/t39.30808-6/356871168_1753161728434026_4282138635465276836_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=DZD5caty6iEAX_C7f65&_nc_ht=scontent.fmnl31-1.fna&oh=00_AfAHGUv_Bt_8v_GF7QFKyv2JaB9eVKQcrmLQCGrqf5gnkA&oe=64A67C98"
+                  class="figure-img img-fluid rounded-top-3 my-0 mb-1" alt="...">
+              </figure>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-6  text-start">
+                    <ul class="list-inline m-0">
+                      <li class="list-inline-item reactions-list position-relative">
+                        <span class="reactions-container position-relative"><img class="reaction-2 img-fluid"
+                            src="/assets/svg/love-reaction.svg" alt="Reactions"></span>
+                      </li>
+                      <li class="list-inline-item  likes-count"><span class="likes-count all-counts">5</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col text-end  d-flex justify-content-end align-items-center">
+                    <ul class="list-inline m-0 comment-share-container">
+                      <li class="list-inline-item ">
+                        <span class="comments-count all-counts">3</span>
+                        <span class="comment-label sm-label">comments</span>
+                        <span class="comment-icon-sm sm-icon"><i class='bx bx-comment'></i></span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="comments-count all-counts">2</span>
+                        <span class="share-label sm-label">share</span>
+                        <span class="share-icon-sm sm-icon"><i class='bx bx-share bx-flip-horizontal'></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="container text-center">
+              </div>
+              <div class="container text-center mb-2 mt-1 border-top">
+                <div class="row upload-option pt-2">
+                  <div class="col">
+                    <i class='bx bx-like like-icon'></i>
+                    <span class="post-box-icons-labels">Like</span>
+                  </div>
+                  <div class="col">
+                    <i class='bx bx-comment comment-icon'></i>
+                    <span class="post-box-icons-labels">Comment</span>
+                  </div>
+                  <div class="col">
+                    <i class='bx bx-share bx-flip-horizontal share-icon'></i>
+                    <span class="post-box-icons-labels">Share</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card right-sidebar-box">
+          <div class="card-body">
+            <h5 class="card-title">Advertisement</h5>
+            <img src="https://via.placeholder.com/300x200" alt="Advert" class="img-fluid">
+          </div>
+          <div class="ui middle aligned animated list">
+            <div class="item">
+              <img class="ui avatar image" src="/images/avatar/small/helen.jpg">
+              <div class="content">
+                <div class="header">Helen</div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image" src="/images/avatar/small/christian.jpg">
+              <div class="content">
+                <div class="header">Christian</div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image" src="/images/avatar/small/daniel.jpg">
+              <div class="content">
+                <div class="header">Daniel</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Jquery JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="/assets/js/custom.js"></script>
+
+  <!-- CDN Bootstrap 5 (JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
